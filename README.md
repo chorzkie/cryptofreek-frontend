@@ -1,6 +1,6 @@
 # Cryptofreek
 
-Cryptofreek is a simple web-based application to display the latest price movement of cryptocurrencies against USD, in graph format. User can search any available cryptocurrency to see its latest price, and user can also sign up to make pwn favorite list of cryptocurrencies.
+Cryptofreek is a simple web-based application to display the latest price movement of cryptocurrencies against USD, in graph format. User can search any available cryptocurrency to see its latest price, and user can also sign up to make own favorite list of cryptocurrencies.
 
 The data on the graph are updated on minutely basis, since it is the fastest API call provided by the source.
 
@@ -37,8 +37,8 @@ You can sign up to create a new user using a dummy email since no verification n
 
 ## Preview
 
-[![](https://imgur.com/MwBerGt)](https://imgur.com/MwBerGt)
-[![](https://imgur.com/neQN0yP)](https://imgur.com/neQN0yP)
+[![](https://imgur.com/H8FLUIN)](https://imgur.com/H8FLUIN)
+[![](https://imgur.com/O6aulho)](https://imgur.com/O6aulho)
 [![](https://imgur.com/Z1dJnLH)](https://imgur.com/Z1dJnLH)
 
 ## Available Scripts
