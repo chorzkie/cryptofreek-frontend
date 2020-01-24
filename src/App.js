@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react'
 import './App.css';
+import { Switch, Route, Redirect } from 'react-router-dom'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from './components/header/header.component'
+import Message from './components/message/message.component';
+import CryptoListPage from './pages/presentation-page/crypto-list/crypto.list.page';
+import SignInAndSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.page';
+import { connect } from 'react-redux'
+
+
+
+const mapStateToProps = (state) => {
+  return {
+      isLoggedIn: state.pageDataRED.isLoggedIn,
+  }
 }
 
-export default App;
+
+class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Message />
+        <Switch>
+          <Route exact path='/' component={CryptoListPage} />
+          <Route exact path='/signin' render={() =>
+            this.props.isLoggedIn ?
+              (<Redirect to='/' />)
+              :
+              (<SignInAndSignUpPage />)}
+          />
+        </Switch>
+      </div>
+    )
+  }
+}
+
+
+export default connect(mapStateToProps, null)(App);

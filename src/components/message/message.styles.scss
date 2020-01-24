@@ -1,0 +1,24 @@
+.message {
+    display: flex;
+    align-items: flex-start;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0px 0px 20px;
+}
+
+.child-message {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.child-message-link {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    margin-right: 20px;
+    font-weight: bolder;
+    color: blue;
+    cursor: pointer;
+}

@@ -1,0 +1,67 @@
+.header {
+    top: 0;
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    .website {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .logo {
+            height: 60px;
+            width: 70px;
+            margin: 10px 10px 0px 10px;
+        }
+        .the-name {
+            font-size: 25px;
+            margin-left: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .options {
+        height: 100%;
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        .option1 {
+            display: flex;
+            flex-direction: row;
+            padding-top: 5px;
+            padding-bottom: 8px;
+            .option1-child {
+                text-decoration: none;
+                color: black;
+                padding: 5px 10px 0px 10px;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+        .option2 {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            font-weight: bold;
+            font-size: 15px;
+            border-top: 1px solid darkgrey;
+            text-decoration: none;
+            color: black;
+            .option2-child {
+                padding: 5px 10px 0px 10px;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            .option2-child1 {
+                padding: 5px 10px 0px 10px;
+                font-weight: bold;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        }
+    }
+}

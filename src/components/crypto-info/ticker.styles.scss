@@ -1,0 +1,34 @@
+.ticker {
+    width: 16vw;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0px 5px 0px;
+    .title {
+        width: 100%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .price {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: bolder;
+        .last-price {
+            font-size: 19px;
+        }
+        .percent {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+        .green {
+            color: green;
+        }
+        .red {
+            color: red;
+        }
+    }
+}
