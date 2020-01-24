@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { backToFrontPageACT } from '../../redux/crypto-data/crypto.data.actions';
+import { Link } from 'react-router-dom'
 import './message.styles.scss'
 
 
@@ -28,20 +29,11 @@ class Message extends Component {
                 <div className='message'>
                     {this.props.mainMessage}
                 </div>
-                {
-                    this.props.mainMessage === 'Here are 10 hottest cryptos of the last 24 hours..' ?
-                        <div>
-                            <br /> 
-                            <br />
-                            <div className='child-message'>All data are updated on minutely basis.</div>
-                        </div>
-                        :
-                        <div>
-                            <div className='child-message'>Unfamiliar with cryptos? </div>
-                            <div className='child-message-link' onClick={ () => this.backToFrontPageFunc() }> Find the top traded cryptos here </div>
-                            <div className='child-message'>All data are updated on minutely basis.</div>
-                        </div>
-                }
+                <div>
+                    <div className='child-message'>Unfamiliar with cryptos? </div>
+                    <Link className='child-message-link' to='/' onClick={() => this.backToFrontPageFunc()}> Find the top traded cryptos here </Link>
+                    <div className='child-message'>All data are updated on minutely basis.</div>
+                </div>
             </div>
         )
     }

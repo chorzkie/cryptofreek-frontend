@@ -23,7 +23,7 @@ import { getCryptoList, getAllCryptoList, prepareCryptoDetailData } from './cryp
 
 
 const initialStateCryptoData = {
-    mainMessage: 'Here are 10 hottest cryptos of the last 24 hours..',
+    mainMessage: '',
     initFetchDone: false,
     allCryptoFetchDone: false,
     allCrypto: [],

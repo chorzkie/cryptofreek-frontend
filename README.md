@@ -1,4 +1,44 @@
+# Cryptofreek
+
+Cryptofreek is a simple web-based application to display the latest price movement of cryptocurrencies against USD, in graph format. User can search any available cryptocurrency to see its latest price, and user can also sign up to make pwn favorite list of cryptocurrencies.
+
+The data on the graph are updated on minutely basis, since it is the fastest API call provided by the source.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Ceremony
+
+- Make sure you have installed [Node](https://nodejs.org/download) on your machine
+- Clone this repository to run it on your own machine
+- Install the required dependencies
+
+## Tech Stacks
+
+- React.js 
+- Redux + Thunk
+- API data feed from https://www.cryptocompare.com/
+- ExpressJS and PostgreSQL for the [backend](https://github.com/chorzkie/cryptofreek-backend)
+
+## Caveats
+
+This app fully relies on data feed from [Crypto Compare](https://www.cryptocompare.com/), hence the availability depends on it.
+
+Feel free to take a look at the [Live Demo](https://cryptofreek.herokuapp.com/) version,
+or run it in [your own machine](#ceremony).
+
+And since the demo app is hosted on free-tier Heroku, it will take some time for the app frontend and backend to run for the first time.
+
+
+## Credentials
+
+You can check the live demo here: https://cryptofreek.herokuapp.com.
+
+You can sign up to create a new user using a dummy email since no verification needed. Or simply use the credentials of: test@mail.com / test123 to sign in directly.
+
+## Preview
+
+[![](https://i.imgur.com/BxNjFA6.png)](https://i.imgur.com/hNtgWeW.jpg)
+
 
 ## Available Scripts
 
