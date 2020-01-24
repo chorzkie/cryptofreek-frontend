@@ -37,8 +37,9 @@ You can sign up to create a new user using a dummy email since no verification n
 
 ## Preview
 
-[![](https://i.imgur.com/BxNjFA6.png)](https://i.imgur.com/hNtgWeW.jpg)
-
+[![](https://imgur.com/MwBerGt)](https://imgur.com/MwBerGt)
+[![](https://imgur.com/neQN0yP)](https://imgur.com/neQN0yP)
+[![](https://imgur.com/Z1dJnLH)](https://imgur.com/Z1dJnLH)
 
 ## Available Scripts
 
