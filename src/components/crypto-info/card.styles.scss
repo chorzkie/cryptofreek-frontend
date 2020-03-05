@@ -1,5 +1,5 @@
 .card {
-    width: 18vw;
+    width: 280px;
     display: flex;
     flex-direction: column;
     height: 265px;
@@ -11,7 +11,7 @@
         align-items: center;
         position: absolute;
         margin-top: 10px;
-        width: 16vw;
+        width: 230px;
         display: none;
     }
     &:hover {
