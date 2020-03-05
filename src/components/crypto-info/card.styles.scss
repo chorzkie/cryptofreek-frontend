@@ -1,8 +1,8 @@
 .card {
-    width: 280px;
+    width: 230px;
     display: flex;
     flex-direction: column;
-    height: 265px;
+    height: 250px;
     align-items: center;
     border: 1px solid gray;
     border-radius: 5px;
@@ -11,7 +11,7 @@
         align-items: center;
         position: absolute;
         margin-top: 10px;
-        width: 230px;
+        width: 210px;
         display: none;
     }
     &:hover {
