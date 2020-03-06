@@ -91,5 +91,7 @@ const bckgrndColor = (data1min, data24hr) => {
 
 const prctCount = (data1min, data24hr) => {
     const prctChange = (data1min.Data.Data[1].close - data24hr.Data.Data[0].close) / data24hr.Data.Data[0].close * 100;
-    return prctChange.toFixed(2);
+    if (Object.is(prctChange,NaN)) { return 0 }
+    else if (Object.is(prctChange,Infinity)) { return (data1min.Data.Data[1].close - data24hr.Data.Data[0].close) / 1 * 100 }    
+    else { return prctChange.toFixed(2) }
 }
